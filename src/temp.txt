@@ -1,0 +1,80 @@
+gulp.task('sass', function(){
+  return gulp.src('src/sass/**/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('postCss', function(){
+  return gulp.src('src/postCss/**/*.pcss')
+        .pipe(postCss())
+        .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('less', function(){
+  return gulp.src('src/less/**/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('scss', function(){
+  return gulp.src('src/scss/**/*.scss')
+        .pipe(scss())
+        .pipe(gulp.dest('src/css'));
+});
+
+gulp.task('stylus', function () {
+  return gulp.src('src/stylus/**/*.styl')
+        .pipe(stylus())
+        .pipe(gulp.dest('src/css'));
+});
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>My Site</h1>
+    <p>Welcome to my super lame siteeeee.</p>
+    <div class="wrapper">
+
+      <header>header</header>
+      <div class="left-box">
+        leftBox
+      </div>
+      <div class="right-box">
+        rightBox
+      </div>
+      <div class="center-box">
+        centerBox
+      </div>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>header</header>
+    <div class="wrapper">
+      <div class="left-box">
+        leftBox
+      </div>
+      <div class="right-box">
+        rightBox
+      </div>
+      <div class="center-box">
+        centerBox
+      </div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
