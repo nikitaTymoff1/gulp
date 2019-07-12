@@ -18,5 +18,5 @@ Then install the gulp command line utility _npm install --global gulp-cli_
 7. Move all **assets** to the dist folder: `gulp assets`;
 8. Delete dist folder: `gulp clean`;
 9. Build your project: `gulp build`;
-10. Enable **browser-sync** feature: `serve`;
-11. Enable **watch** feature: `watch`;
+10. Enable **browser-sync** feature: `gulp serve`;
+11. Enable **watch** feature: `gulp watch`;
