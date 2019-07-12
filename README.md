@@ -10,7 +10,7 @@ Then install the gulp command line utility _npm install --global gulp-cli_
 ## Gulp tasks
 -----------------
 1. Activate **dev** mode: `gulp dev`;
-2. Combine all **skripts** in one file: `gulp js`;
+2. Combine all **scripts** in one file: `gulp js`;
 3. Combine all **styles** in one file: `gulp combine-css`;
 4. Convert your **pug** template into html file: `gulp pug`;
 5. Use your **handlebars** templates: `gulp handlebars`;
