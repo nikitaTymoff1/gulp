@@ -3,6 +3,7 @@
 ## Installation
 -----------------
 Check for **node**, **npm** and **npx**
+
 If they're not installed, follow the instructions: [here](https://nodejs.org/en/)
 
 Then install the gulp command line utility _npm install --global gulp-cli_
