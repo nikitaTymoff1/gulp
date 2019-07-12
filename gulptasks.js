@@ -76,6 +76,6 @@ exports.combineMustache = function(path){
   .pipe(gulp.dest('dist'));
 };
 exports.combineAssets = function(path){
-  return gulp.src(path, {since: gulp.lastRun('assets')})
+  return gulp.src(path)
   .pipe(gulp.dest('dist/assets'));
 };
