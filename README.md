@@ -2,7 +2,7 @@
 -----------------
 ## Installation
 -----------------
-Check for **node**, **npm** and **npx**
+Check for **node**, **npm** and **npx**(type `node --version`, `npm --version`, `npx --version`)
 
 If they're not installed, follow the instructions: [here](https://nodejs.org/en/)
 
