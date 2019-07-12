@@ -17,24 +17,25 @@ const pathCss = {
 const gulp         = require('gulp');
 const del          = require('del');
 const browserSync  = require('browser-sync').create();
-const myTask       = require('./gulptasks');
+const myTask       = require('./gulp-tasks/index');
+
 gulp.task('js',function () {
-  return myTask.combineJs(pathJs);
+  return myTask.combineJs.combineJs(pathJs);
 });
 gulp.task('combine-css', function () {
-  return myTask.combineCss(pathCss);
+  return myTask.combineCss.combineCss(pathCss);
 });
 gulp.task('pug', function () {
-  return myTask.combinePug(pathPug);
+  return myTask.combinePug.combinePug(pathPug);
 });
 gulp.task('templates', function(){
-  return myTask.combineHandlebars(pathHandlebars);
+  return myTask.combineHandlebars.combineHandlebars(pathHandlebars);
 });
 gulp.task('mustache',function() {
-  return myTask.combineMustache(pathMustache);
+  return myTask.combineMustache.combineMustache(pathMustache);
 });
 gulp.task('assets', function () {
-  return myTask.combineAssets(pathAssets);
+  return myTask.combineAssets.combineAssets(pathAssets);
 });
 gulp.task('clean', async function() {
     return del.sync('dist');
