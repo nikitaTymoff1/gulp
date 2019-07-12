@@ -2,11 +2,11 @@
 -----------------
 ## Installation
 -----------------
-Check for **node**, **npm** and **npx** (type `node --version`, `npm --version`, `npx --version`)
+Check for **node**, **npm** and **npx** (type `node --version`, `npm --version`, `npx --version`).
 
-If they're not installed, follow the instructions: [here](https://nodejs.org/en/)
+If they're not installed, follow the instructions: [here](https://nodejs.org/en/).
 
-Then install the gulp command line utility _npm install --global gulp-cli_
+Then install the gulp command line utility: `npm install --global gulp-cli`.
 
 ## Gulp tasks
 -----------------
