@@ -50,6 +50,6 @@ browserSync.watch('dist/**/*.*').on('change', browserSync.reload);
 gulp.task('watch', function() {
     gulp.watch('src/styles/**/*.*', gulp.parallel('combine-css'));
     gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
-    gulp.watch('src/js/**/*.pug', gulp.parallel('js'));
+    gulp.watch('src/js/**/*.js', gulp.parallel('js'));
 });
 gulp.task('dev', gulp.series('build',gulp.parallel('watch','serve')));
